@@ -25,7 +25,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'us-east1-docker.pkg.dev/eastern-dream-404606/testing/2ndfile:${SHORT_SHA}']
 
-   # Step 4: # Store images in Google Artifact Registry 
+   # Step 4: # Store images in Google Artifact Registry add
 images:
   - us-east1-docker.pkg.dev/eastern-dream-404606/testing/2ndfile:${SHORT_SHA}
   - us-east1-docker.pkg.dev/eastern-dream-404606/testing/2ndfile:$BRANCH_NAME
